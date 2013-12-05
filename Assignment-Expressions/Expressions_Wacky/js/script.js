@@ -2,7 +2,7 @@
 //Joey Fuller
 //12-5-13
 //find the correct numbers!
-alert("Enter five numbers and try to find the correct pattern to make the total equal");
+alert("Enter five numbers (0 - 10) and try to find the correct pattern to make the total equal -3.5");
 
 var first = prompt("Enter the first number");
 var second = prompt("Enter the second number");
