@@ -37,13 +37,12 @@ if(inputWebsite === "Y" && inputHosting === "Y"){
 }
 
 if(inputWebsite === "Y" && inputHosting === "Y"){
-	
+	var inputUpgradeBoth = prompt("Would you like the premium upgrade for both of your services for an extra $150? (Y or N)")
 }else if(inputWebsite === "Y" && inputHosting === "N"){
-	
+	var inputUpgradeWebsite = prompt("Would you like to upgrade your website to our premium service for an extra $100? (Y or N)")
 }else if(inputWebsite === "N" && inputHosting === "Y"){
-
+	var inputUpgradeHosting = prompt("Would you like to upgrade your hosting to our premium service for an extra $100? (Y or N)")
 }else{
-
-var inputWebsiteHigh = prompt("Do you want our premium package upgrade for an extra $150? (Y or N)")
+	console.log("Use still has not refreshed after using incorrect inputs!");
 }
 
