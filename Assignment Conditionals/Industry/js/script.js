@@ -10,8 +10,8 @@ if(inputWebsite === "Y" && inputHosting === "Y"){
 	console.log("We see you only need a website!");
 }else if(inputWebsite === "N" && inputHosting === "Y"){
 	console.log("We see you only need hosting!");
-}else if(inputWebsite != "Y" && inputHosting != "Y"){
+}else if(inputWebsite === "N" && inputHosting === "N"){
 	console.log("We see that you are unsure of your choice, please contact us for more information!");
 }else{
-	console.log("You choices of " + inputWebsite + " and " + inputHosting + " we unclear, please try again!");
+	console.log("You choices of " + inputWebsite + " and " + inputHosting + " are unclear, please try again using the approved Y for yes and N for no.");
 }
