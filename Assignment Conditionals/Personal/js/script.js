@@ -10,8 +10,8 @@ alert("Welcome to the house buying budget guide!");
 var hello = prompt("Do you have a house picked out? (Y or N)");
 
 if(hello === "Y"){
-	alert("Congrats! Lets see if you can afford it!");
-	console.log("Congrats! Lets see if you can afford it!");
+	alert("Congrats! Lets see if you can afford it within a year!");
+	console.log("Congrats! Lets see if you can afford it within a year!");
 }else if(hello === "N"){
 	alert("Thats okay, we can still see what your price range is!");
 	console.log("Thats okay, we can still see what your price range is!");
@@ -23,27 +23,17 @@ if(hello === "Y"){
 var houseCost = prompt("How much are you looking to spend? Do not include $")
 var saved = prompt("How much money do you have saved? Do not include $")
 var moneyNeeded = houseCost - saved
+var closingCosts = 1600
 
 alert("Okay now we are getting somewhere! You have $" + saved + " and need $" + moneyNeeded + "! Also do not forget about closing costs!");
 
-var credit = prompt("What is an estimate of your credit score?")
-var greatCredit = .04
-var goodCredit = .0475
-var fairCredit = .05125
-var poorCredit = .07125
-if(credit > 800){
-	var finalCredit = .04
-}else if(credit > 750){
-	var finalCredit = .0475
-}else if(credit > 700){
-	var finalCredit = .05125
-}else if(credit > 675){
-	var finalCredit = .07125
-}else{
-	alert("We are sorry your credit is too low to finace.");
-}
+var income = prompt("How much money do you make a month? (exclude the $ symbol)")
+var yearlyIncome = income*12
+var totalIncome = saved + yearlyIncome
+var short = moneyNeeded - totalIncome
+var test = 4
+(test < 0) ? console.log("CONGRATS! You can buy the house!") : console.log("I am sorry you are short by $" + short + ". Keep saving!");
 
-var interest = finalCredit*moneyNeeded
-alert("test" + interest);
+
 
 
