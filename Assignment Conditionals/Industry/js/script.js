@@ -1,5 +1,6 @@
 // Joey Fuller
 // Industry Conditionals
+// 12-12-13
 alert("Hello welcome to our automated pricing system for websites and hosting! Click OK to continue!");//intro the the site/code
 
 var inputWebsite = prompt("Do you need a website? (Y or N)")// variable to see if they need a website
