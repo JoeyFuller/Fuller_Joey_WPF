@@ -38,12 +38,28 @@ if(inputWebsite === "Y" && inputHosting === "Y"){
 }
 
 if(inputWebsite === "Y" && inputHosting === "Y"){
-	var inputUpgradeBoth = prompt("Would you like the premium upgrade for both of your services for an extra $150? (Y or N)")
+	var inputUpgradeBoth = prompt("Would you like the premium upgrade for both of your services for an extra $100 + $20/year? (Y or N)")
 }else if(inputWebsite === "Y" && inputHosting === "N"){
 	var inputUpgradeWebsite = prompt("Would you like to upgrade your website to our premium service for an extra $100? (Y or N)")
 }else if(inputWebsite === "N" && inputHosting === "Y"){
-	var inputUpgradeHosting = prompt("Would you like to upgrade your hosting to our premium service for an extra $100? (Y or N)")
+	var inputUpgradeHosting = prompt("Would you like to upgrade your hosting to our premium service for an extra $20/year? (Y or N)")
 }else{
 	console.log("Use still has not refreshed after using incorrect inputs!");
 }
 
+var priceWeb = 400
+var priceHosting = 20
+var priceUpWeb = 500
+var priceUpHost = 40
+
+if(inputWebsite === "Y" && inputHosting === "Y" && inputUpgradeBoth === "Y"){
+	alert("Your price will be $" + priceUpWeb + " for the website as a one time fee + $" + priceUpHost + "/year.");
+}else if(inputWebsite ==="Y" && inputHosting === "N" && inputUpgradeWebsite === "Y"){
+	alert("Your price will be $" + priceUpWeb + " as a one time fee without hosting!");
+}else if(inputWebsite === "N" && inputHosting === "Y" && inputUpgradeHosting === "Y"){
+	alert("Your price will be $" + priceUpHost + "/year!");
+}else if(inputWebsite === "N" && inputHosting === "Y" && inputUpgradeHosting === "N"){
+	alert("Your price will be $" + pricehosting + "/year!");
+}else{
+	alert("You did not the proper inputs somewhere! For all answers input Y or N");
+}
