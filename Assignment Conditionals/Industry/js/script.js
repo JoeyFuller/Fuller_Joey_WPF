@@ -18,7 +18,20 @@ if(inputWebsite === "Y" && inputHosting === "Y"){
 	alert("We see that you are unsure of your choice, please contact us for more information!");
 }else{
 	console.log("You choices of " + inputWebsite + " and " + inputHosting + " are unclear, please try again using the approved Y for yes and N for no.");
-	alert("You choices of " + inputWebsite + " and " + inputHosting + " are unclear, please try again using the approved Y for yes and N for no.");
+	alert("You choices of " + inputWebsite + " and " + inputHosting + " are unclear, please refresh and try again using the approved Y for yes and N for no.");
 }
 //End of finding out what services they need and start of pricing!
 
+if(inputWebsite === "Y" && inputHosting === "Y"){
+	alert("Now we can find a price for your website and hosting!");
+	console.log("Now we can find a price for your website and hosting!");
+}else if(inputWebsite === "Y" && inputHosting === "N"){
+	alert("Now we can find a price for your website!");
+	console.log("Now we can find a price for your website!");
+}else if(inputWebsite === "N" && inputHosting === "Y"){
+	alert("Now we can find a price for you hosting!");
+	console.log("Now we can find a price for your hosting!");
+}else{
+	alert("We see that you did not use the approved inputs and have not refreshed, please refresh now and try again.");
+	console.log("We see that you did not use the approved inputs and have not refreshed, please refresh now and try again.");
+}
