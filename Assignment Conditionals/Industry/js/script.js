@@ -35,3 +35,15 @@ if(inputWebsite === "Y" && inputHosting === "Y"){
 	alert("We see that you did not use the approved inputs and have not refreshed, please refresh now and try again.");
 	console.log("We see that you did not use the approved inputs and have not refreshed, please refresh now and try again.");
 }
+
+if(inputWebsite === "Y" && inputHosting === "Y"){
+	
+}else if(inputWebsite === "Y" && inputHosting === "N"){
+	
+}else if(inputWebsite === "N" && inputHosting === "Y"){
+
+}else{
+
+var inputWebsiteHigh = prompt("Do you want our premium package upgrade for an extra $150? (Y or N)")
+}
+
