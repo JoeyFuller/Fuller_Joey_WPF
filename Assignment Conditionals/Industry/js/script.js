@@ -54,6 +54,8 @@ var priceUpHost = 40
 
 if(inputWebsite === "Y" && inputHosting === "Y" && inputUpgradeBoth === "Y"){
 	alert("Your price will be $" + priceUpWeb + " for the website as a one time fee + $" + priceUpHost + "/year.");
+}else if(inputWebsite === "Y" && inputHosting ==="Y" && inputUpgradeBoth ==="N"){
+	alert("Your price will be $" + priceWeb + " for a one time fee + $" + priceHosting + "/year.");
 }else if(inputWebsite ==="Y" && inputHosting === "N" && inputUpgradeWebsite === "Y"){
 	alert("Your price will be $" + priceUpWeb + " as a one time fee without hosting!");
 }else if(inputWebsite === "N" && inputHosting === "Y" && inputUpgradeHosting === "Y"){
