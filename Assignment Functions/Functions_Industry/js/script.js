@@ -28,11 +28,11 @@ if(experiance === "Y" && gpu === "Y"){  //output for the variables experiance an
 
 var numberOfPages = prompt("How many pages do you plan on making?"); // input for the amount of pages on the website
 	
-var totalHours = function(numberOfPages){
-	var hours = 4 * numberOfPages;
+var totalHours = function(pages){
+	var hours = 4 * pages;
 	return hours;
 }
-var userPages = totaHours(numberOfPages);
+var userPages = totalHours(numberOfPages);
 console.log(userPages);
 alert(userPages);
 
