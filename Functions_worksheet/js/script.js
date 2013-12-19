@@ -14,13 +14,13 @@ console.log("The circumference of the circle is " + circleCircumference); //simp
 
 //START OF Stung!
 
-var stings = stingsPerWeight(10);
+var stings = stingsPerWeight(10);//the return variable
 
-function stingsPerWeight(weight){
+function stingsPerWeight(weight){ //the main function that calulated the amount of stings needed to kill an animal at a certain weight
 	var total = 8.666666667 * weight;
-	return total;
+	return total; //the return back to the variable stings
 }
-console.log("It takes " + stings + " to kill this animal.");
+console.log("It takes " + stings + " to kill this animal."); //print out of the results to concole.
 
 
 
