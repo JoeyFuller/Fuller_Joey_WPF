@@ -13,10 +13,20 @@ if(experiance === "Y" && gpu === "Y"){
 	console.log("Great you seem to be ahead of the curve!");
 	alert("Great you seem to be ahead of the curve!");
 }else if(experiance === "y" && gpu === "y"){
+	console.log("Great you seem to be ahead of the curve!");
+	alert("Great you seem to be ahead of the curve!");
+}else{
 	console.log("You seem to be new at this, but lets continue!");
 	alert("You seem to be new at this, but lets continue!");
-}else{
-	console.log("You did not input a valid option, please try again!");
-	alert("You did not input a valid option, please try again!");
 }
+
+var numberOfPages = prompt("How many pages do you plan on making?");
 	
+var totalHours = function hoursPerPage(numberOfPages){
+	var hours = 4 * numberOfPages;
+	return hours;
+}
+
+console.log(totalHours);
+alert(totalHours);
+
