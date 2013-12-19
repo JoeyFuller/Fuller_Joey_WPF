@@ -3,12 +3,12 @@
 // Functions_worksheet
 
 // Circumference
-var circleCircumference = function circle(radius){
-	var circumference = 2 * radius * Math.PI;
-	return circle;
-}
+var circleCircumference = circleRadius(10);
 
-var answer = circleCircumference(10);
+function circleRadius(radius){
+	var circumference = 2 * radius * Math.PI;
+	return circumference;
+}
 
 console.log("The circumference of the circle is " + circleCircumference);
 
