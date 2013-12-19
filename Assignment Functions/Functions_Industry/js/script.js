@@ -12,8 +12,11 @@ var gpu = prompt("Do you have the graphics laid out? (Y or N)")
 if(experiance === "Y" && gpu === "Y"){
 	console.log("Great you seem to be ahead of the curve!");
 	alert("Great you seem to be ahead of the curve!");
-}else{
+}else if(experiance === "y" && gpu === "y"){
 	console.log("You seem to be new at this, but lets continue!");
 	alert("You seem to be new at this, but lets continue!");
+}else{
+	console.log("You did not input a valid option, please try again!");
+	alert("You did not input a valid option, please try again!");
 }
 	
