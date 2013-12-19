@@ -34,15 +34,15 @@ if(experiance === "Y" && gpu === "Y"){  //output for the variables experiance an
 var numberOfPages = prompt("How many pages do you plan on making?"); // input for the amount of pages on the website
 	
 var totalHours = function(pages){ //function to esitmate the hours per page it may take with no experiance
-	var hours = 4 * pages;
+	var hours = 4 * pages; // four hours per page, this multiplies the users input amount by 4 which is the time allowed per page
 	return hours; //return
 }
 var userPages = totalHours(numberOfPages); //number of pages
 
-var final;
-final = (exp === true) ? "The site will take around " + userPages + " hours to complete! Good Luck!" : "The site will take around " + 2*userPages + " hours to complete! Good luck!";
+var final; // place holder for the final output var
+final = (exp === true) ? "The site will take around " + userPages + " hours to complete for " + name + ". Good Luck!" : "The site will take around " + 2*userPages + " hours to complete for " + name + ". Good luck!";  //ternary use for the final output depending on the experiance level of the user, if the user does not have experiance the time doubles
 
-console.log(final);
-alert(final);
+console.log(final); //final output for the console.
+alert(final); //final output
 
 
